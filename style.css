@@ -1,0 +1,130 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  box-shadow: 10px 10px 5px #888;
+}
+.header button {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+  height: 3.2rem;
+  width: 11rem;
+  border-radius: 3rem;
+  color: #febd69;
+  background-color: white;
+  border: 0px;
+  font-size: xx-large;
+}
+
+nav ul {
+  font-size: medium;
+  list-style: none;
+  color: white;
+
+  margin-right: 1rem;
+  padding-top: 0.3rem;
+}
+nav li {
+  padding: 0.2rem;
+
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover {
+  text-decoration: none;
+  color: #0488a9;
+}
+
+@media only screen and (max-width: 600px) {
+  .header button {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.8rem;
+    height: 3.2rem;
+    width: 6rem;
+    border-radius: 3rem;
+    color: white;
+    background-color: #febd69;
+    border: 0px;
+    font-size: large;
+  }
+}
+
+.container-items {
+  display: flex;
+  background-color: white;
+  align-items: flex-start;
+}
+.item-image {
+  width: 18rem;
+  height: 18rem;
+}
+.item-image img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 16rem;
+  height: 16rem;
+}
+
+.item-info {
+  /* background-color: yellow; */
+  margin-left: 1rem;
+}
+
+hr {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .item-image {
+    width: 8rem;
+    height: 8rem;
+  } */
+
+  .container-items {
+    margin-top: 1rem;
+    display: flex;
+    background-color: white;
+    align-items: flex-start;
+    height: 11rem;
+  }
+  .item-image img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .item-info {
+    /* background-color: yellow; */
+    margin-left: 1rem;
+  }
+  .rating {
+    margin: 0px;
+    margin-top: 0.5rem;
+  }
+  .title {
+    font-size: x-large;
+    margin: 0px;
+  }
+  .price {
+    font-size: large;
+    margin-top: 0.3rem;
+  }
+  .item-info p {
+    font-size: small;
+  }
+}
