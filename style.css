@@ -253,3 +253,82 @@ hr {
     border: none;
   }
 }
+
+.login-container {
+  /* background-color: red; */
+
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-div {
+  /* background-color: yellow; */
+  width: 40%;
+  height: 60%;
+}
+
+.login-div {
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+.login-div form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.login-div form label {
+  margin-bottom: 0.2rem;
+}
+.login-div form input {
+  height: 1.2rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #f5d892;
+  border-radius: 0.2rem;
+}
+.login-div form button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #f5d68b;
+  border: 1px solid #f5d892;
+  height: 2rem;
+  border-radius: 0.2rem;
+}
+.login-div form p {
+  font-size: small;
+}
+@media only screen and (max-width: 600px) {
+  .login-div {
+    width: 70%;
+    height: 60%;
+  }
+  .login-div {
+    border: 1px solid gray;
+    border-radius: 1rem;
+  }
+  .login-div form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .login-div form label {
+    margin-bottom: 0.2rem;
+  }
+  .login-div form input {
+    margin-bottom: 0.5rem;
+    border: 1px solid #f5d892;
+    border-radius: 0.2rem;
+  }
+  .login-div form button {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #f5d68b;
+    border: 1px solid #f5d892;
+    height: 1.6rem;
+    border-radius: 0.2rem;
+  }
+  .login-div form p {
+    font-size: xx-small;
+  }
+}
