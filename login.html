@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhoneIo</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- navbar -->
-    <div class="header">
-      <button>PhoneIo</button>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./login.html" class="current-page">Login</a></li>
-          <li><a href="./register.html">Register</a></li>
-        </ul>
-      </nav>
-      <!-- navbar -->
-    </div>
 
-    <!-- main content -->
-    <div class="login-container">
-      <div class="login-div">
-        <form action="">
-          <h1>Login</h1>
-          <label for="Email">Email/Contact:</label>
-          <input type="email" />
-          <label for="">Password:</label>
-          <input type="password" name="" />
-          <button>Continue</button>
-          <p>
-            By continuing, you agree to PhoneIo's Conditions of Use and Privacy
-            Notice.
-          </p>
-        </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhoneIo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="header">
+    <button>PhoneIo</button>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./login.html" class="current-page">Login</a></li>
+        <li><a href="./register.html">Register</a></li>
+      </ul>
+    </nav>
+    <!-- navbar -->
+  </div>
+
+  <!-- main content -->
+  <div class="login-container">
+    <div class="login-div">
+      <form action="">
+        <h1>Login</h1>
+        <label for="Email">Email/Contact:</label>
+        <input type="email" name="email" />
+        <label for="">Password:</label>
+        <input type="password" name="password" />
+        <button id="login">Continue</button>
+        <p>
+          By continuing, you agree to PhoneIo's Conditions of Use and Privacy
+          Notice.
+        </p>
+      </form>
+      <div class="error">
+        <span id="errorspan"></span>
+
       </div>
     </div>
-    <!-- main content -->
-  </body>
+  </div>
+  <!-- main content -->
+</body>
+<script src="index2.js"></script>
+
 </html>

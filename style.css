@@ -56,7 +56,54 @@ nav li a:hover {
   color: #febd69;
 }
 
+.slideshow {
+  /* background-color: #131921; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slideshow img {
+  width: auto;
+  padding: 3rem;
+  max-height: 550px;
+  animation: fade;
+  animation-duration: 1.2s;
+  /* height: 500px; */
+}
+
+.error {
+  padding: 0.2rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.error span {
+  padding-left: 1rem;
+  width: 80%;
+  background-color: #f8d7da;
+  /* border: 1px solid #ff2b06; */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
 @media only screen and (max-width: 600px) {
+  .slideshow img {
+    width: auto;
+    padding: 3rem;
+    max-height: 130px;
+    animation: fade;
+    animation-duration: 1.2s;
+    /* height: 500px; */
+  }
   .header button {
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -319,10 +366,12 @@ hr {
   .login-div {
     border: 1px solid gray;
     border-radius: 1rem;
+    height: fit-content;
   }
   .login-div form {
     display: flex;
     flex-direction: column;
+
     margin: 1rem;
   }
   .login-div form label {
